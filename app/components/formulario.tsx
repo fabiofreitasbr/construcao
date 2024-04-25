@@ -18,7 +18,7 @@ export default function Formulario() {
         else {
             setMessage('Aguarde...');
             console.log(email);
-            axios.post('https://api.estudiogrape.com.br/goodsun/email/create', { email: email })
+            axios.post('/api/database', { email: email })
             .then(function (response) {
                 setMessage(response.data.message);
                 if (response.data.status == true) { setColorMessage('bg-green-500'); } else { setColorMessage('bg-orange-500'); }
