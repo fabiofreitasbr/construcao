@@ -11,7 +11,7 @@ export default function Home() {
             <div className="flex container mx-auto p-4 h-screen items-center justify-center flex-col">
                 <Logo />
                 <Titulo />
-                {/* <Contador /> */}
+                <Contador />
                 <Formulario />
                 <Redes />
             </div>
